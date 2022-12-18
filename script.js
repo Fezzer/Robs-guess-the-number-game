@@ -147,7 +147,7 @@ do {
         } else {
 
           confirm(`Try again. You have ${4-guesses} guesses left.`);
-          console.log(`<ROBOT> "${4-guesses} guesses left? You have no chance"`);
+          console.log(`<ROBOT> "${userGuess} ?!?! No chance!!! ${4-guesses} guesses left? You have no chance"`);
 
         };
 
@@ -160,17 +160,17 @@ do {
   
   if(wins == losses) {
 
-    console.log("We are equal worthy foe!!!");
+    console.log(`<ROBOT> "We are equal worthy foe!!!"`);
     alert(`The final score is ${wins} - ${losses}. YOU Drew`);
 
   } else if(wins > losses) {
 
-    console.log("NOOOOOOOOOOOOOOOO my computer chips.....are......MELTING!!!!!");
+    console.log(`<ROBOT> "NOOOOOOOOOOOOOOOO my computer chips.....are......MELTING!!!!!"`);
     alert(`The final score is ${wins} - ${losses}. YOU WIN!!!!!!!!!!`);
 
   } else {
 
-    console.log("MWUH HAHAHAHAHAHA YOU LOOOOOOSER!!! Your puny little organic processor is no match for my silicon processor built by beings with an organic proces.....wait?! I WIN, YOU SUCK!!!");
+    console.log(`<ROBOT> "MWUH HAHAHAHAHAHA YOU LOOOOOOSER!!! Your puny little organic processor is no match for my silicon processor built by beings with an organic proces.....wait?! I WIN, YOU SUCK!!!"`);
     alert(`The final score is ${wins} - ${losses}. Sorry, but you lost this game.`);
 
   };
