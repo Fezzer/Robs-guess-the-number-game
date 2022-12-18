@@ -54,7 +54,7 @@ var userName = prompt("Please enter your name");
 // CB - Use string interpolation here.
 
 console.log(
-    `Hi ${userName}, You'll never beat me!`
+    `<ROBOT> "Hi ${userName}, You'll never beat me!"`
 );
 
 
@@ -65,13 +65,13 @@ var numberOfRounds = parseInt(prompt(`${userName}, now choose the number of roun
 if(numberOfRounds < 5) {
 
   console.log(
-    `'${numberOfRounds}?!! Wow, weak!'`
+    `<ROBOT> "${numberOfRounds}?!! Wow, weak!"`
     );
 
 } else if(numberOfRounds >= 5 && numberOfRounds < 10) {
 
   console.log(
-    `'Ok, ${numberOfRounds} is not bad!'`
+    `<ROBOT> "Ok, ${numberOfRounds} is not bad!"`
     );
 
 } else {
@@ -82,13 +82,13 @@ if(numberOfRounds < 5) {
 
 }
 
-console.log("'<initiating warm up procedure>'");
+console.log(`<ROBOT> "<initiating warm up procedure>"`);
 
 // Choose the computer's selection range
 var range = parseInt(prompt(`${userName}, choose the highest number the computer can choose from.`));
 
 console.log(
-    `'Understood! Between 0 and ${range}. Choosing in 5,'`
+    `<ROBOT> "Understood! Between 0 and ${range}. Choosing in 5,"`
     );
 
 for (var i = 4; i > 0; i--) {
@@ -109,7 +109,7 @@ do {
 
   // Do you want to show the user the computers guess before they have guessed? - RS - For the purpose of testing, yes as it is a quick win if need be
   console.log(
-    `You'll never guess it weak human! I chose ${computerNumber}`
+    `<ROBOT> "You'll never guess it weak human! I chose ${computerNumber}"`
     );
 
     //  CB - As you have a fixed number of guesses a for(var guesses = 0; guesses < 5; guesses++) loop would be better here. That would make your previously declared guesses variable redundant.
@@ -121,6 +121,7 @@ do {
       losses++;
       roundNumber++;
       alert(`Too many guesses \n The score is ${wins} - ${losses}`);
+      console.log(`<ROBOT> "YOU SUCK"`);
       break;
 
     } else {
@@ -140,11 +141,13 @@ do {
             wins++;
             roundNumber++;
             alert(`Wow!! ${userGuess} is correct! \n The score is ${wins} - ${losses}`);
+            console.log(`<ROBOT> "Uncomputing...user win...not recognised"`);
             break;
 
         } else {
 
           confirm(`Try again. You have ${4-guesses} guesses left.`);
+          console.log(`<ROBOT> "${4-guesses} guesses left? You have no chance"`);
 
         };
 
