@@ -113,13 +113,13 @@ for (let round = 0; round < numberOfRounds; round++) {
 let resultText = "";
 
 if(wins == losses) {
-  console.log(`<ROBOT> "We are equal worthy foe!!!"`);
+  console.log("ROBOT> \"We are equal worthy foe!!!\"");
   resultText = "YOU Drew";
 } else if(wins > losses) {
-  console.log(`<ROBOT> "NOOOOOOOOOOOOOOOO my computer chips.....are......MELTING!!!!!"`);
+  console.log("<ROBOT> \"NOOOOOOOOOOOOOOOO my computer chips.....are......MELTING!!!!!\"");
   resultText = "YOU WIN!!!!!!!!!!";
 } else {
-  console.log(`<ROBOT> "MWUH HAHAHAHAHAHA YOU LOOOOOOSER!!! Your puny little organic processor is no match for my silicon processor built by beings with an organic proces.....wait?! I WIN, YOU SUCK!!!"`);
+  console.log("<ROBOT> \"MWUH HAHAHAHAHAHA YOU LOOOOOOSER!!! Your puny little organic processor is no match for my silicon processor built by beings with an organic proces.....wait?! I WIN, YOU SUCK!!!\"");
   resultText = "Sorry, but you lost this game.";
 };
 
