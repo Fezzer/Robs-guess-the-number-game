@@ -114,9 +114,9 @@ do {
 
     //  CB - As you have a fixed number of guesses a for(var guesses = 0; guesses < 5; guesses++) loop would be better here. That would make your previously declared guesses variable redundant.
  
-  for (var guesses = 0; guesses < 5; guesses++) {
+  for (var guesses = 0; guesses < 6; guesses++) {
 
-    if(guesses == 4) {
+    if(guesses == 5) {
 
       losses++;
       roundNumber++;
